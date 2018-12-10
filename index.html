@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADR's</title>
+	<link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+	<h1>Architecture Decision Records</h1>
+	<h2>2018-12-05 Wordpress command-line interface (WP-CLI)</h2>
+	<h3>Decision</h3>
+	<p>I will not attempt to install the WP-CLI on my laptop, because the space in my username is causing too many knock-on issues. The standard install contains scripts that are falling over at the space in <code>/Users/user 1/</code>. I might have edited the path to read <code>/Users/'user 1'</code> had I been able to find them (it worked for <code>~/.zshrc</code>) but I was not able to find them. I tried circumventing the problem by creating a WordPress user, with a view to using this login only for WordPress work. Whilst the process of setting up another user, and updating <code>~/.bash_profile</code>, was useful and instructive, and did allow the WP-CLI install to go further than it had previously, I reached a point where the npm package required me to <code>chown</code> a number of significant-looking folders relating to homebrew and npm. Doing this would risk compromising my main login and making me unable to do important NodeJS work on it.</p>
+	<p>Instead, I will attempt to install WP-CLI only on the mac, and will add my laptop at some point in future as and when I replace it.</p>
+
+</body>
+</html>
